@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+:root{
+    --white: hsl(0, 0%, 100%);
+    --rose_white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --Light_Grey: hsl(30, 18%, 87%);
+    --Wenge_Brown: hsl(30, 10%, 34%);
+    --Dark_Charcoal: hsl(24, 5%, 18%);
+
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark_Raspberry: hsl(332, 51%, 32%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16;
+    font-weight: 400px;
+    line-height: 1.5;
+    color: var(--Wenge_Brown);
+}
+
+body{
+    background-color: var(--eggshell) ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    
+    font-family: "Outfit", sans-serif;
+    font-weight:400;
+    padding-bottom: 250px;
+}
+
+.container{
+    grid-column: 2/ 3;
+    width:900px;
+    position: relative;
+    top: 5%;
+    background-color: var(--white);
+    padding:50px;
+    border-radius: 20px;
+}
+img{
+    width: 100%;
+}
+.title{
+    font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--Dark_Charcoal);
+}
+h1{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin:20px 0;
+}
+
+h2{
+    margin:5px 0;
+}
+
+.rose_card{
+    background-color: var(--rose_white);
+    padding: 7px 30px;
+    margin-top: 20px;
+    border-radius: 20px;
+    line-height: 1.8;
+}
+
+.ul_enter{
+    position: relative;
+    left: 4%;
+}
+li span {
+    position: relative;
+    left: 30px;
+}
+
+.ul_ingre{
+    position: relative;
+    left: 3%;
+}
+
+hr{
+    margin: 20px 0;
+}
+
+table{
+    width:100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+.trnolast{
+    border-bottom: 1px solid var(--Light_Grey);
+}
+td{
+    text-align: left;
+    padding: 1em;
+}
+
+h2{
+    color: var(--Dark_Raspberry);
+}
+
+.mycolor{
+    color:var(--Nutmeg)
+}
+
+.color2{
+    color: var(--Wenge_Brown);
+}
+
+hr{
+    
+    border-top: 1px solid var(--Light_Grey);
+}
+li{
+    width: 90%;
+}
+
+li::marker{
+    color:var(--Nutmeg);
+}
+
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 500px;
+  }
+}
+
+
+@media screen and (max-width: 530px) {
+    .container {
+      width: 300px;
+    }
+  }
